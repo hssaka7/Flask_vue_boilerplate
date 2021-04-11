@@ -7,7 +7,7 @@ app.config.from_object(__name__)
 # enabling CORS
 CORS(app, resources={r'/*': {'origins': '*'}})
 
-@app.route('/test', methods= ['GET'])
+@app.route('/ping', methods= ['GET'])
 def test1():
     return jsonify('test pass. Hello From Flask')
 
