@@ -1,5 +1,6 @@
 # Flask_vue_boilerplate
 Basic web application using python Flask on Backend and Vue.js on Frontend
+Inspiration: https://testdriven.io/blog/developing-a-single-page-app-with-flask-and-vuejs/
 
 ## Running Backend Flask API
 use python3.9+
@@ -15,6 +16,9 @@ python app.py
 
 ```
 npm install -g @vue/cli@4.5.11
+npm install --save-dev eslint-import-resolver-alias
+npm install axios@0.21.1 --save
+npm install bootstrap@4.6.0 --save
 ```
 Setting for vue client: 
 ```
