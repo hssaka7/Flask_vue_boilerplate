@@ -11,8 +11,13 @@ python app.py
 ```
 
 ## Running FrontEnd Vue App
-
-### Installing Vue.js and running client
+### Running Client:
+```
+cd client
+npm install
+npm run serve
+```
+### Installing Vue.js and running client (just for knowledge)
 
 ```
 npm install -g @vue/cli@4.5.11
@@ -33,8 +38,4 @@ Vue CLI v4.5.11
 ? Save this as a preset for future projects? (y/N) No
 ```
 
-Running Client:
-```
-$ cd client
-$ npm run serve
-```
+
