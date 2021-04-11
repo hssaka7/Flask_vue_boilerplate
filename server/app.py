@@ -5,17 +5,17 @@ import uuid
 MOODS = [
     {
         'id': uuid.uuid4().hex,
-        'mood': 'Happy',
+        'name': 'Happy',
         'timestamp': '20200101',
     },
     {
         'id': uuid.uuid4().hex,
-        'mood': 'Sad',
+        'name': 'Sad',
         'timestamp': '20200102',
     },
     {
         'id': uuid.uuid4().hex,
-        'mood': 'Amused',
+        'name': 'Amused',
         'timestamp': '20200103',
     }
 ]
