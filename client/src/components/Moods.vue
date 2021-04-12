@@ -4,6 +4,7 @@
       <div class="col-sm-10">
         <h1>Moods</h1>
         <hr><br><br>
+        <alert :message=message v-if="showMessage"></alert>
         <button type="button" class="btn btn-success btn-sm" v-b-modal.mood-modal>Add Mood</button>
         <br><br>
         <table class="table table-hover">
@@ -65,6 +66,7 @@
 
 <script>
 import axios from 'axios';
+import Alert from './Alert.vue';
 
 export default {
   data() {
@@ -74,7 +76,12 @@ export default {
         timestamp: '',
         name: '',
       },
+      message: '',
+      showMessage: false,
     };
+  },
+  components: {
+    alert: Alert,
   },
   methods: {
     getMoods() {
@@ -93,6 +100,9 @@ export default {
       axios.post(path, payload)
         .then(() => {
           this.getMoods();
+          // where should this set to false?
+          this.showMessage = true;
+          this.message = 'Book added!';
         })
         .catch((error) => {
           // eslint-disable-next-line
