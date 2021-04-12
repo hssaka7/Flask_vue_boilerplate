@@ -38,7 +38,7 @@ def all_moods():
         post_data = request.get_json()
         MOODS.append({
             'id': uuid.uuid4().hex,
-            'mood': post_data.get('mood'),
+            'name': post_data.get('name'),
             'timestamp': post_data.get('timestamp'),
         })
         response_object['message'] = 'Moods Added'
